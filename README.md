@@ -20,11 +20,33 @@ Number
 Yes / No (radio)
 Equals - Radio selected is equal to this value (either yes or no)
 
-The user can keep creating sub-inputs with conditions to as many levels deep as they would like. Each sub-input’s condition corresponds to the value of the parent input.
+The user can keep creating sub-inputs with conditions to as many levels deep as they would like. Each sub-input’s condition corresponds to the value of the parent input. To handle this requirement, I utilized a depth-first search algorithm.
+
+``` JavaScript
+// this code can be found in /src/util/subs-helper.js
+
+//takes in an array of SubInput objects and removes the SubInput with the id objectId
+const depthFirstDeletion = (subInputsArray, objectId) => {
+  if(subInputsArray.length === 0){
+    return;
+  }
+  subInputsArray.forEach((subItem, idx) => {
+    let key = Object.keys(subItem)[0];
+    if(key === objectId){
+      subInputsArray.splice(idx, 1);
+    } else{
+      depthFirstDeletion(subItem[key]['subInputs'], objectId);
+    }
+  });
+};
+```
 
 By default, the create tab starts out blank with just the Add Input button for the user to create their first input.
 
 Upon clicking the preview tab, the user is presented with a working demo of the form based on the structure they created in the Create tab. When the preview tab is loaded, it  renders only the parent level questions until the user answers questions. Based on the users answers to questions, the next level of conditional questions are shown.
+
+
+
 
 The preview tab re-renders every time it is clicked with no persistence.
 
