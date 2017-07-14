@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-intro {
+  font-size: large;
+  margin: 0;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.input-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.output-form{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+  margin-left: 5vw;
+}
+
+.question-container{
+  border: 2px solid black;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  margin: 2vw;
+}
+
+.question-buttons{
+  display: flex;
+  margin: 1vw;
+}
+
+.button-span{
+  width: 10px;
+}
+
+.delete-button{
+  background-color: #FF4081;
+}
+.new-question-button {
+  margin-top: 2vh;
+}
+
+.sub-question-container{
+  border: 3px solid #FF4081;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1.5vw;
+  margin-right: 2vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  margin-left: 3vw;
+}
+
+.sub-question-group {
+  display: flex;
+  align-content: space-between;
+}
+
+.json-pretty {
+  text-align: left;
+}
+.json-div {
+  position: relative;
+  top: 45%;
+   left: 45%;
+   margin-left: -100px;
+}
+
+.radio-group{
+  display: flex;
+}
+
+.no-radio-button{
+  margin-left: 80px;
+}
+
+.export-json{
+  font-size: 10pt;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  height: 60vh;
+}
+
+.sub-questions-form{
+  margin-left: 40px;
+}
+
+.form-component-container{
+
+}
+
+.form-component-main{
+  padding-bottom: 2vh;
+}
+
+.form-component-sub{
+  padding-bottom: 2vh;
+  margin-left: 40px;
+}
