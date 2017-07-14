@@ -40,5 +40,6 @@
       "color-accent-contrast": "var(--color-dark-contrast)"
     },
     "output": "assets/react-toolbox"
-  }
+  },
+  "homepage": "https://lkrych.github.io/form-builder"
 }
