@@ -1,5 +1,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
+Play with this project [here](https://lkrych.github.io/form-builder/)
+
 ## React Indio Challenge
 
 One of the largest problems in the insurance industry today is the pure amount of client data that is stored in an inconsistent manner. Between 1000s of fillable PDFs, archaic online forms, and old databases, there’s a real big need for standardization.
